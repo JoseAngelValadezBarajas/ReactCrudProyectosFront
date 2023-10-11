@@ -15,11 +15,11 @@ proyecto-react/ <br>
 ├── package.json<br>
 ├── README.md<br>
 
-1.- Clona el repositorio de React en tu máquina local:
-   -git clone <URL_del_repositorio_de_React>
-2.-Dirigete a la ubicacion raiz del proyecto e Instala los paquetes 
-   -npm install
-3.-Por ultimo inicia la app
-   -npm start
+1.- Clona el repositorio de React en tu máquina local:<br>
+   -git clone <URL_del_repositorio_de_React><br>
+2.-Dirigete a la ubicacion raiz del proyecto e Instala los paquetes <br>
+   -npm install<br>
+3.-Por ultimo inicia la app<br>
+   -npm start<br>
 
 //Como nota debes revisar si en tu aplicacion back end las url de las peticiones siguen siendo las mismas que las ya configuradas en caso contrario deberas configurar las tuyas e igual revisar tu puerto por cuestiones de CORS.

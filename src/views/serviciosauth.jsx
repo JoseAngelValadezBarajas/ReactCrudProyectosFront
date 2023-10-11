@@ -181,6 +181,20 @@ function Serviciosauth() {
                         />
                       </td>
                       <td>
+                        <input
+                          type="text"
+                          value={editedData.projectManager}
+                          onChange={e => setEditedData({ ...editedData, projectManager: e.target.value })}
+                        />
+                      </td>
+                      <td>
+                        <input
+                          type="text"
+                          value={editedData.desarrolladores}
+                          onChange={e => setEditedData({ ...editedData, desarrolladores: e.target.value })}
+                        />
+                      </td>
+                      <td>
                         <button onClick={handleSave}>Guardar</button>
                       </td>
                     </>

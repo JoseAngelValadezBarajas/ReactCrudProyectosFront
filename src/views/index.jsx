@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 function Index() {
   return (
     <div>
-      <h2 className="mt-4 mb-4">Índice</h2>
+      <h2 className="mt-4 mb-4">Bienvenido</h2>
       <div className="d-flex flex-column">
         <Link to="/login">
           <button className="btn btn-primary mb-2">Iniciar Sesión</button>

@@ -1,8 +1,7 @@
-/*
-    Autor: Valadez Barajas Jose Angel
-    Fecha: 10/10/23
-    Version: 1.0
-*/
+/**
+ * @autor Valadez Barajas Jose Angel
+ * @version 1.0
+ */
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from '../src/views/login';

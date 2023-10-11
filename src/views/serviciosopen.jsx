@@ -1,13 +1,15 @@
-/*
-    Autor: Valadez Barajas Jose Angel
-    Fecha: 10/10/23
-    Version: 1.0
-*/
+/**
+ * Componente que muestra una vista con proyectos sin autenticación.
+ * @autor Valadez Barajas Jose Angel
+ * @version 1.0
+ */
 import React, { useState, useEffect } from 'react';
 
 function Serviciosopen() {
   const [data, setData] = useState([]);
-
+  /**
+     * Realiza una solicitud para obtener proyectos sin autenticación desde el servidor.
+  */
   useEffect(() => {
     var requestOptions = {
         method: 'GET',

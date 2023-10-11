@@ -1,22 +1,43 @@
-/*
-    Autor: Valadez Barajas Jose Angel
-    Fecha: 10/10/23
-    Version: 1.0
-*/
+/**
+ * @author Valadez Barajas Jose Angel
+ * @version 1.0
+ */
 import React, { useState } from 'react';
 
+/**
+ * Realiza la autenticación del usuario.
+ *
+ * @param {string} username - El nombre de usuario del usuario.
+ * @param {string} password - La contraseña del usuario.
+ *
+ * @return {Promise} Una promesa que resuelve cuando se completa la autenticación.
+ *
+ * @throws {Error} Si ocurre un error durante la autenticación.
+ */
 function Login() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  //Logica de la funcion para carga de informacion de usuario
+   /**
+   * Maneja el cambio en el campo de nombre de usuario.
+   *
+   * @param {Event} e - El evento de cambio.
+   */
   const handleUsernameChange = (e) => {
     setUsername(e.target.value);
   };
-
+    /**
+   * Maneja el cambio en el campo de contraseña.
+   *
+   * @param {Event} e - El evento de cambio.
+   */
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
   };
-
+    /**
+   * Maneja el envío del formulario de inicio de sesión.
+   *
+   * @param {Event} e - El evento de envío de formulario.
+   */
   const handleSubmit = async (e) => {
     e.preventDefault();
 

@@ -1,8 +1,7 @@
-/*
-    Autor: Valadez Barajas Jose Angel
-    Fecha: 10/10/23
-    Version: 1.0
-*/
+/**
+ * @author Valadez Barajas Jose Angel
+ * @version 1.0
+ */
 import React, { useState, useEffect } from 'react';
 
 function Serviciosauth() {
@@ -15,7 +14,9 @@ function Serviciosauth() {
   useEffect(() => {
     fetchProyectos();
   }, []);
-
+    /**
+   * Obtiene la lista de proyectos desde el servidor.
+   */
   const fetchProyectos = () => {
     fetch('http://localhost:5000/servicios/auth/proyectos')
       .then(response => response.json())
@@ -30,12 +31,19 @@ function Serviciosauth() {
         console.error('Error al obtener los proyectos:', error);
       });
   };
-
+    /**
+   * Maneja la edición de un proyecto.
+   *
+   * @param {Object} proyecto - El proyecto a editar.
+   */
   const handleEdit = (proyecto) => {
     setEditingId(proyecto.id);
     setEditedData({ ...proyecto });
   };
-
+  
+    /**
+   * Guarda los cambios en un proyecto.
+   */
   const handleSave = () => {
     if (creatingProject) {
       fetch('http://localhost:5000/servicios/auth/proyectos', {
@@ -72,6 +80,11 @@ function Serviciosauth() {
     }
   };
 
+    /**
+   * Maneja la eliminación de un proyecto.
+   *
+   * @param {number} id - ID del proyecto a eliminar.
+   */
   const handleDelete = (id) => {
     fetch(`http://localhost:5000/servicios/auth/proyectos/${id}`, {
       method: 'DELETE',
@@ -88,6 +101,9 @@ function Serviciosauth() {
       });
   };
 
+    /**
+   * Inicia el proceso de creación de un nuevo proyecto.
+   */
   const startCreatingProject = () => {
     setCreatingProject(true);
   };

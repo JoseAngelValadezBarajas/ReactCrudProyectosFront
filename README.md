@@ -16,7 +16,7 @@ proyecto-react/ <br>
 ├── README.md<br>
 
 1.- Clona el repositorio de React en tu máquina local:<br>
-   -git clone <URL_del_repositorio_de_React><br>
+   -git clone <https://github.com/JoseAngelValadezBarajas/ReactCrudProyectosFront.git><br>
 2.-Dirigete a la ubicacion raiz del proyecto e Instala los paquetes <br>
    -npm install<br>
 3.-Por ultimo inicia la app<br>
